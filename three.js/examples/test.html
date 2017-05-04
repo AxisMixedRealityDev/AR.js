@@ -123,7 +123,8 @@
 	mesh.position.y	= geometry.parameters.height/2
 	scene.add( mesh );
 	
-var geometry = new THREE.SphereGeometry( 1, 64, 64 );
+
+	var geometry = new THREE.SphereGeometry( .5, 32, 32 );
 var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
 var sphere = new THREE.Mesh( geometry, material );
 scene.add( sphere );
@@ -132,6 +133,7 @@ scene.add( sphere );
 	onRenderFcts.push(function(delta){
 		mesh.rotation.x += Math.PI*delta
 	})
+
 
 	//////////////////////////////////////////////////////////////////////////////////
 	//		render the whole thing on the page

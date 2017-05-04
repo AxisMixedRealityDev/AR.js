@@ -133,7 +133,7 @@
 	var loader = new THREE.JSONLoader();
     	loader.load('../data/stanford-bunny.json', function(geometry) {
 	var material = new THREE.MeshNormalMaterial(); 
-        mesh = new THREE.Mesh(geometry,material);
+        var mesh = new THREE.Mesh(geometry,material);
         scene.add(mesh);
     });
 	

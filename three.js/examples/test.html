@@ -11,7 +11,7 @@
 	<br/>
 	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
 	<br/>
-	this should be loading the geometry.json.
+	this should be loading the geometry.json clair.io example.
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Init
@@ -116,12 +116,12 @@
 
 
 	
+	
 	var loader = new THREE.JSONLoader();
-    	loader.load('../data/models/geometry.json', function(geometry, scene) {
-	var material = new THREE.MeshNormalMaterial(); 
-        var mesh = new THREE.Mesh(geometry,material);
-        scene.add(mesh);
-   	});
+	loader.load( '../data/models/geometry.json', function ( geometry, materials ) {
+   	 var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+  	  scene.add( mesh );
+	});
 	
 	
 	//onRenderFcts.push(function(delta){

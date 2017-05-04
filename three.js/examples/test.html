@@ -11,7 +11,7 @@
 	<br/>
 	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
 	<br/>
-	this should be loading the bunny.
+	this should be loading the chameleon.json.
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Init
@@ -117,7 +117,7 @@
 
 	
 	var loader = new THREE.JSONLoader();
-    	loader.load('../data/stanford-bunny.json', function(geometry, scene) {
+    	loader.load('../data/models/chameleon.json', function(geometry, scene) {
 	var material = new THREE.MeshNormalMaterial(); 
         var mesh = new THREE.Mesh(geometry,material);
         scene.add(mesh);

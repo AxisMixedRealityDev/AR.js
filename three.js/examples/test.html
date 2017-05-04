@@ -117,7 +117,7 @@
 
 	
 	var loader = new THREE.JSONLoader();
-    	loader.load('../data/models/chameleon.json', function(geometry, scene) {
+    	loader.load('../data/models/geometry.json', function(geometry, scene) {
 	var material = new THREE.MeshNormalMaterial(); 
         var mesh = new THREE.Mesh(geometry,material);
         scene.add(mesh);

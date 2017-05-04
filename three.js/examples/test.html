@@ -131,7 +131,7 @@
 //scene.add( sphere );
 	
 	var loader = new THREE.JSONLoader();
-loader.load('../data/stanford-bunny.json', function (geometry, materials) {
+	loader.load('../data/stanford-bunny.json', function (geometry, materials) {
 	var material = new THREE.MeshNormalMaterial();
 	mesh = new THREE.Mesh(geometry, material);
 	scene.add(mesh));

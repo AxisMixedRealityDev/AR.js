@@ -125,13 +125,13 @@
 	
 
 	var geometry = new THREE.SphereGeometry( .5, 32, 32 );
-var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+var material = new THREE.MeshNormalMaterial(); 
 var sphere = new THREE.Mesh( geometry, material );
 scene.add( sphere );
 	
 	
 	onRenderFcts.push(function(delta){
-		mesh.rotation.x += Math.PI*delta
+		sphere .rotation.x += Math.PI*delta
 	})
 
 

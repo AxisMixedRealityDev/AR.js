@@ -9,9 +9,9 @@
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: absolute; top: 10px; width:100%; text-align: center; z-index: 1;'>
 	<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - three.js camera transform
 	<br/>
-	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
+	based off ar.js by <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
 	<br/>
-	simplified geometry.json clair.io example.
+	teapot-claraio.jso clair.io example.
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Init
@@ -117,11 +117,12 @@
 
 	
 	
-	var loader = new THREE.JSONLoader();
-	loader.load( '../data/models/geometry.json', function ( geometry, materials ) {
-   	 var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
-  	  scene.add( mesh );
-	});
+				// BEGIN Clara.io JSON loader code
+				var objectLoader = new THREE.ObjectLoader();
+				objectLoader.load("../data/models/teapot-claraio.json", function ( obj ) {
+				 	scene.add( obj );
+				} );
+				// END Clara.io JSON loader code
 	
 	
 	//onRenderFcts.push(function(delta){

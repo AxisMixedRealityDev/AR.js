@@ -11,7 +11,7 @@
 	<br/>
 	based off ar.js by <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
 	<br/>
-	teapot-claraio.jso clair.io example. scale =1 added baseURL;
+	teapot-claraio.jso clair.io example. scale =1 added baseURL test material;
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Init
@@ -121,6 +121,7 @@
 				var objectLoader = new THREE.ObjectLoader();
 				objectLoader.load(THREEx.ArToolkitContext.baseURL + "../data/models/teapot-claraio.json", function ( obj ) {
 					obj.scale.set(scale,scale,scale);
+					obj.material = var material	= new THREE.MeshNormalMaterial;
 				 	scene.add( obj );
 				} );
 				// END Clara.io JSON loader code

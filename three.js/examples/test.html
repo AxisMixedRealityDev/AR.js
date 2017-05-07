@@ -11,7 +11,7 @@
 	<br/>
 	based off ar.js by <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
 	<br/>
-	stanford-dragon.json example. marker16.pat;
+	Stanford_Bunny.json reexport example. marker16.pat;
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Init
@@ -119,7 +119,7 @@
 					var scale =1;
 				// BEGIN Clara.io JSON loader code
 				var objectLoader = new THREE.ObjectLoader();
-				objectLoader.load("models/stanford-dragon.json", function ( obj ) {
+				objectLoader.load("models/Stanford_Bunny.json", function ( obj ) {
 					obj.scale.set(scale,scale,scale);
 					obj.material =material	;
 				 	scene.add( obj );

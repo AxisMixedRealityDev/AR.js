@@ -7,7 +7,7 @@
 <script src="../build/ar.min.js"></script>
 
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: absolute; top: 10px; width:100%; text-align: center; z-index: 1;'>
-wheels 2
+wheels 2 adjust light
 	
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
@@ -113,6 +113,8 @@ wheels 2
 
 	
 	var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
+	    directionalLight.position.set(0, 1500, 0);
+    directionalLight.target.position.set(6000, 0, 3000);
 scene.add( directionalLight );  
 				var scale =2;
 				// BEGIN Clara.io JSON loader code

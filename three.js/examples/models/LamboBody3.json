@@ -52,11 +52,18 @@
 			"dithering": false
 		}],
 	"object": {
-		"uuid": "04A11D3D-7F46-4620-A452-A4E10B26914A",
-		"type": "Mesh",
-		"name": "Body",
-		"matrix": [0.01,0,0,0,0,0.01,0,0,0,0,0.01,0,0,0,0,1],
-		"geometry": "CD2C0823-A0D0-438B-8B8A-2902A3801EC9",
-		"material": "09837F4F-C62F-4294-954A-FBE9FC4EAD13"
+		"uuid": "5F8D37D4-9947-423C-89EC-942FACE95DBD",
+		"type": "Scene",
+		"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+		"children": [
+			{
+				"uuid": "04A11D3D-7F46-4620-A452-A4E10B26914A",
+				"type": "Mesh",
+				"name": "Body",
+				"matrix": [0.01,0,0,0,0,0.01,0,0,0,0,0.01,0,0,0,0,1],
+				"geometry": "CD2C0823-A0D0-438B-8B8A-2902A3801EC9",
+				"material": "09837F4F-C62F-4294-954A-FBE9FC4EAD13"
+			}],
+		"background": 11184810
 	}
 }

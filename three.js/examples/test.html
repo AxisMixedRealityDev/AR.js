@@ -7,7 +7,7 @@
 <script src="../build/ar.min.js"></script>
 
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: absolute; top: 10px; width:100%; text-align: center; z-index: 1;'>
-bunny + LamboBody4.json textured material pathc change
+bunny + LamboBody4.json meshMaterial
 	
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
@@ -131,7 +131,7 @@ scene.add( directionalLight );
 meshMaterial.side = THREE.DoubleSide;
 				objectLoader.load("models/LamboBody4.json", function ( obj ) {
 					obj.scale.set(scale,scale,scale);
-					obj.material =material	;
+					obj.material =meshMaterial	;
 				 	scene.add( obj );
 				} );
 				// END Clara.io JSON loader code

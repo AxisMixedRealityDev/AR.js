@@ -7,7 +7,7 @@
 <script src="../build/ar.min.js"></script>
 
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: absolute; top: 10px; width:100%; text-align: center; z-index: 1;'>
-
+wheels 2
 	
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
@@ -142,7 +142,7 @@ meshMaterial.side = THREE.DoubleSide;
 				var objectLoader = new THREE.ObjectLoader();
 		var meshMaterial = new THREE.MeshPhongMaterial({ transparent: false, map: THREE.ImageUtils.loadTexture('models/textures/Lamborghini.png') });
 meshMaterial.side = THREE.DoubleSide;
-				objectLoader.load("models/wheels.json", function ( obj ) {
+				objectLoader.load("models/wheels2.json", function ( obj ) {
 					obj.scale.set(scale,scale,scale);
 					obj.material =meshMaterial	;
 				 	scene.add( obj );
